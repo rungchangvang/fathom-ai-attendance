@@ -6,7 +6,7 @@
      Google-side setup (published Roster CSV, new Attendance Form).
   --------------------------------------------------------------- */
   var CONFIG = {
-    ROSTER_CSV_URL: "REPLACE_WITH_PUBLISHED_ROSTER_CSV_URL",
+    ROSTER_CSV_URL: "https://docs.google.com/spreadsheets/d/e/2PACX-1vQyKxO1ZffXKkXiKuMrOkvgqBf8BdUFq4BffFVj2MY3uTEJs0QaqpBTAADhtnphysRfue1rFiD6F8Sm/pub?gid=481131407&single=true&output=csv",
     FORM_ACTION_URL: "https://docs.google.com/forms/d/e/1FAIpQLSedQ5BduCUsT30KY1DjkGVxaPhTJFOdfoqgHW849TkG2Cr7eQ/formResponse",
     DATE_ENTRY_ID: "entry.794975521",
     NAME_ENTRY_ID: "entry.487102942"
