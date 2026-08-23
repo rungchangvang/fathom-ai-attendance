@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Attendance — Fathom AI</title>
+  <meta name="robots" content="noindex">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800&family=Source+Sans+3:wght@400;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="topbar">
+    <svg class="mark" viewBox="0 0 64 64" fill="none" aria-hidden="true">
+      <path d="M 36.16 53.59 Q 27.31 57.59 20.81 50.49 Q 14.31 43.39 9.06 34.71 Q 3.81 26.03 11.24 19.01 Q 18.68 11.98 28.01 6.33 Q 37.34 0.69 44.62 8.88 Q 51.91 17.06 55.78 26.47 Q 59.65 35.88 52.33 42.73 Q 45.01 49.58 36.16 53.59 Z" stroke="currentColor" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+      <path d="M 37.34 44.60 Q 35.54 45.42 34.22 43.97 Q 32.90 42.52 31.83 40.76 Q 30.76 38.99 32.27 37.56 Q 33.79 36.13 35.69 34.98 Q 37.59 33.83 39.07 35.49 Q 40.55 37.16 41.34 39.08 Q 42.13 40.99 40.64 42.39 Q 39.15 43.78 37.34 44.60 Z" stroke="currentColor" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+    </svg>
+    <span class="topbar-word">FATHOM AI</span>
+    <span class="topbar-tool">Attendance</span>
+  </header>
+
+  <main>
+    <div class="controls">
+      <div class="field">
+        <label for="att-date">Date</label>
+        <input type="date" id="att-date">
+      </div>
+      <div class="roster-actions">
+        <button type="button" class="btn-link" id="select-all">Select all</button>
+        <button type="button" class="btn-link" id="clear-all">Clear all</button>
+      </div>
+    </div>
+
+    <p id="roster-status" class="status">Loading roster…</p>
+
+    <div id="roster-list" class="roster-list" aria-live="polite"></div>
+
+    <button type="button" class="btn btn-primary" id="submit-btn">Submit attendance</button>
+
+    <div id="confirm-panel" class="confirm-panel" hidden></div>
+  </main>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
